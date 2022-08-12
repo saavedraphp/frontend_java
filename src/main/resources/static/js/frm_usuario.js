@@ -27,9 +27,10 @@ async function registrar()
       'Content-Type': 'application/json'
     },
     body: JSON.stringify(datos)
-
-
   });
+
+    alert("La cuenta fue creada con exito!");
+    window.location.href = 'usuarios.html'
 
 
 }

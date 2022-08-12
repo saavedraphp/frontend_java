@@ -6,10 +6,12 @@ import java.util.List;
 
 public interface UsuarioDao {
 
-    public List<Usuario> getUsuarios();
+    List<Usuario> getUsuarios();
 
 
     void eliminar(Long id);
 
     void registrar(Usuario usuario);
+
+    boolean verificarCredenciales(Usuario usuario);
 }
